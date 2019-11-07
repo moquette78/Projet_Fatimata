@@ -1,0 +1,23 @@
+package service;
+
+import java.util.ArrayList;
+import java.util.Date;
+
+import metier.Client;
+import metier.Commande;
+import metier.Produit;
+
+public class Lanceur {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Client charles=new Client(1,"chachar","azerty","Dupont","Charle","1 rue Charlemagne",new Date(),"charles@live.fr","nouveau","cheque",new ArrayList<Commande> ());
+		Client paul=new Client(2,"popol","123toto","Simon","Paul","3 rue De Gaulle",new Date(),"paul@live.fr","confirme","cb",new ArrayList<Commande> ());
+
+		
+		Produit p1= new Produit(10,"chaussette",2,"super chaussette",4,"vetements",2);
+	}
+
+}

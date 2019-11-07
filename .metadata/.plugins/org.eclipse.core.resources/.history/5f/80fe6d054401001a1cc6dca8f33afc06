@@ -1,0 +1,27 @@
+package gestion;
+
+import metier.Client;
+import metier.Produit;
+import metier.Commande;
+import metier.CommandeProduit;
+
+public class Service {
+	
+	public void ajouterCommandeProduit(Commande c, Produit p) {
+		c.getCommandeProduit().add(new CommandeProduit(p.getQuantite(),p.getPrix(),c,p));
+		p.getCommandeProduit().add(new CommandeProduit(p.getQuantite(),p.getPrix(),c,p));
+
+	}
+	
+	
+	public void ajouterCommandeClient(Client c, Produit p, int quantite) {
+		
+		}
+	
+	public List<Commande> listerCommandeClient(Client c) {
+		
+			return c.getCommandes();
+		
+		}
+
+}

@@ -1,0 +1,13 @@
+package metier;
+import java.util.Date;
+
+public class Commande {
+
+	private int commandeID;
+	private Date dateCommande;
+	private String statut;
+	private String facture;
+	private String bonLivraison;
+	
+	private Client client
+}

@@ -1,0 +1,15 @@
+package service;
+
+import metier.Client;
+import metier.Commande;
+
+public class Lanceur {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Client charles=new Client(1,"chachar","azerty","Dupont","1 rue Charlemagne",new Date(),"charles@live.fr","nouveau","cheque",new Arraylist<Commande> ());
+	}
+
+}

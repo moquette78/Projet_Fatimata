@@ -1,0 +1,53 @@
+package metier;
+
+public class CommandeProduit {
+
+	
+	private int quantiteProduit;
+	private double prixTotal;
+	
+	private Commande commande;
+	private Produit produit;
+	
+	
+	
+	
+	public CommandeProduit(int quantiteProduit, double prixTotal, Commande commande, Produit produit) {
+		super();
+		quantiteProduit = quantiteProduit;
+		this.prixTotal = prixTotal;
+		this.commande = commande;
+		this.produit = produit;
+	}
+	public int getQuantiteProduit() {
+		return quantiteProduit;
+	}
+	public void setQuantiteProduit(int quantiteProduit) {
+		quantiteProduit = quantiteProduit;
+	}
+	public double getPrixTotal() {
+		return prixTotal;
+	}
+	public void setPrixTotal(double prixTotal) {
+		this.prixTotal = prixTotal;
+	}
+	public Commande getCommande() {
+		return commande;
+	}
+	public void setCommande(Commande commande) {
+		this.commande = commande;
+	}
+	public Produit getProduit() {
+		return produit;
+	}
+	public void setProduit(Produit produit) {
+		this.produit = produit;
+	}
+	@Override
+	public String toString() {
+		return "CommandeProduit [quantiteProduit=" + quantiteProduit + ", prixTotal=" + prixTotal + "]";
+	}
+	
+	
+	
+}

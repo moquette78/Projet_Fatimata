@@ -1,0 +1,11 @@
+package metier;
+
+public class CommandeProduit {
+
+	
+	private int QuantiteProduit;
+	private double prixTotal;
+	
+	private Commande commande;
+	private Produit produit;
+}
