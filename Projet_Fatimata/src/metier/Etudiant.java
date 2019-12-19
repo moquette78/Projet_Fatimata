@@ -1,9 +1,9 @@
-
+package metier;
 public class Etudiant {
 
 	private int numEtudiant;
 	private String prenomEtudiant;
-	private int nomEtudiant;
+	private String nomEtudiant;
 	
 	private Ecole ecole;
 	
@@ -27,25 +27,26 @@ public class Etudiant {
 	public void setPrenomEtudiant(String prenomEtudiant) {
 		this.prenomEtudiant = prenomEtudiant;
 	}
-	public int getNomEtudiant() {
+	public String getNomEtudiant() {
 		return nomEtudiant;
 	}
-	public void setNomEtudiant(int nomEtudiant) {
+	public void setNomEtudiant(String nomEtudiant) {
 		this.nomEtudiant = nomEtudiant;
 	}
 	
-	public Etudiant(int numEtudiant, String prenomEtudiant, int nomEtudiant) {
+	public Etudiant(int numEtudiant, String prenomEtudiant, String nomEtudiant,Ecole ecole) {
 		super();
 		this.numEtudiant = numEtudiant;
 		this.prenomEtudiant = prenomEtudiant;
 		this.nomEtudiant = nomEtudiant;
+		this.ecole = ecole;
 	}
 	
 	
 	
 	public String faireExamen() {
 		
-		return "Vous faites un examen à" + this.ecole;
+		return "Vous faites un examen à " + this.getEcole().getNomEcole();
 		
 	}
 	

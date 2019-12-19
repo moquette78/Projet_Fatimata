@@ -1,3 +1,4 @@
+package metier;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,10 +11,21 @@ public class Ecole {
 	
 	///////////////////
 	
+	public Ecole(String nomEcole, String adresse) {
+		super();
+		this.nomEcole = nomEcole;
+		this.adresse = adresse;
+	}
 	
+	@Override
+	public String toString() {
+		return "Ecole [nomEcole=" + nomEcole + ", adresse=" + adresse + "]";
+	}
+
 	public String getNomEcole() {
 		return nomEcole;
 	}
+	
 	public List<Etudiant> getEtudiants() {
 		return etudiants;
 	}
@@ -35,5 +47,8 @@ public class Ecole {
 		return this.getEtudiants();
 	}
 	
+	public void addEtudiant(Etudiant e) {
+		this.getEtudiants().add(e);
+	}
 	
 }
