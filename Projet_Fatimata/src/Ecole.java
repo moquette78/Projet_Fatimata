@@ -10,8 +10,15 @@ public class Ecole {
 	
 	///////////////////
 	
+	
 	public String getNomEcole() {
 		return nomEcole;
+	}
+	public List<Etudiant> getEtudiants() {
+		return etudiants;
+	}
+	public void setEtudiants(List<Etudiant> etudiants) {
+		this.etudiants = etudiants;
 	}
 	public void setNomEcole(String nomEcole) {
 		this.nomEcole = nomEcole;
@@ -23,9 +30,9 @@ public class Ecole {
 		this.adresse = adresse;
 	}
 	
-	public ArrayList<Etudiant> listeEtu (){
+	public List<Etudiant> listeEtu (){
 		
-		return this.etudiants;
+		return this.getEtudiants();
 	}
 	
 	
