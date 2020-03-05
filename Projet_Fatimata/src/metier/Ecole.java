@@ -5,21 +5,21 @@ import java.util.List;
 public class Ecole {
 
 	private String nomEcole;
-	private String adresse;
+	private String adresseEcole;
 	
 	private List<Etudiant> etudiants = new ArrayList<Etudiant>();
 	
 	///////////////////
 	
-	public Ecole(String nomEcole, String adresse) {
+	public Ecole(String nomEcole, String adresseEcole) {
 		super();
 		this.nomEcole = nomEcole;
-		this.adresse = adresse;
+		this.adresseEcole = adresseEcole;
 	}
 	
 	@Override
 	public String toString() {
-		return "Ecole [nomEcole=" + nomEcole + ", adresse=" + adresse + "]";
+		return "Ecole [nomEcole=" + nomEcole + ", adresseEcole=" + adresseEcole + "]";
 	}
 
 	public String getNomEcole() {
@@ -35,11 +35,11 @@ public class Ecole {
 	public void setNomEcole(String nomEcole) {
 		this.nomEcole = nomEcole;
 	}
-	public String getAdresse() {
-		return adresse;
+	public String getadresseEcole() {
+		return adresseEcole;
 	}
-	public void setAdresse(String adresse) {
-		this.adresse = adresse;
+	public void setadresseEcole(String adresseEcole) {
+		this.adresseEcole = adresseEcole;
 	}
 	
 	public List<Etudiant> listeEtu (){

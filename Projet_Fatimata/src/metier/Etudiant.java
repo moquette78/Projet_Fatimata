@@ -1,7 +1,7 @@
 package metier;
-public class Etudiant {
+public class Etudiant  {
 
-	private int numEtudiant;
+	private String numEtudiant;
 	private String prenomEtudiant;
 	private String nomEtudiant;
 	
@@ -9,7 +9,15 @@ public class Etudiant {
 	
 	/////////////////////////:
 	
-	public int getNumEtudiant() {
+	public Etudiant(String numEtudiant, String prenomEtudiant, String nomEtudiant,Ecole ecole) {
+		super();
+		this.numEtudiant = numEtudiant;
+		this.prenomEtudiant = prenomEtudiant;
+		this.nomEtudiant = nomEtudiant;
+		this.ecole = ecole;
+	}
+	
+	public String getNumEtudiant() {
 		return numEtudiant;
 	}
 	public Ecole getEcole() {
@@ -18,7 +26,7 @@ public class Etudiant {
 	public void setEcole(Ecole ecole) {
 		this.ecole = ecole;
 	}
-	public void setNumEtudiant(int numEtudiant) {
+	public void setNumEtudiant(String numEtudiant) {
 		this.numEtudiant = numEtudiant;
 	}
 	public String getPrenomEtudiant() {
@@ -34,13 +42,12 @@ public class Etudiant {
 		this.nomEtudiant = nomEtudiant;
 	}
 	
-	public Etudiant(int numEtudiant, String prenomEtudiant, String nomEtudiant,Ecole ecole) {
-		super();
-		this.numEtudiant = numEtudiant;
-		this.prenomEtudiant = prenomEtudiant;
-		this.nomEtudiant = nomEtudiant;
-		this.ecole = ecole;
+	@Override
+	public String toString() {
+		return "Etudiant [numEtudiant=" + numEtudiant + ", prenomEtudiant=" + prenomEtudiant + ", nomEtudiant="
+				+ nomEtudiant + "]";
 	}
+	
 	
 	
 	

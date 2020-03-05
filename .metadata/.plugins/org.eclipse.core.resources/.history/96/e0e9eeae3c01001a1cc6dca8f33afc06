@@ -1,9 +1,0 @@
-package service;
-
-import metier.Produit;
-
-public class Service {
-	
-	public void ajouterCommandeClient(Client c, Produit p, int quantite)
-
-}

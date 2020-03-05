@@ -1,0 +1,15 @@
+Question 1 :
+Connection se trouve dans le package "java.sql.Connection"
+C'est une classe.
+
+Question 2 :
+"Class.forName" sert à charger le driver JDBC.
+
+Question 3 :
+Le "try catch" permet d'attraper les exceptions quand elles se produisent dans le "try".
+
+Question 4 :
+En faisant des if/else.
+
+Question 5 :
+Le code dans "finally" sera exécuté dans tous les cas, qu'il y ait une exception ou pas.

@@ -1,6 +1,0 @@
-
-public class Commande {
-
-	private int commandeID;
-	private Date dateCommande;
-}
