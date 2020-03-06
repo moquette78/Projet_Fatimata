@@ -1,7 +1,9 @@
 package presentation;
 
 import metier.Benji;
+import metier.Cedric;
 import metier.Fati;
+import service.ServiceSport;
 
 public class Lanceur {
 
@@ -11,11 +13,14 @@ public class Lanceur {
 		
 		Fati fati = new Fati("Fati");
 		Benji benji = new Benji("Benji");
+		Cedric ced = new Cedric();
+		ServiceSport sSport = new ServiceSport();
 		
-		System.out.println("Fati va courir");
-		fati.courir();
-		System.out.println("Benji va nager");
-		benji.nager();
+		sSport.participerTriat(fati);
+		sSport.participerTriat(benji);
+		fati.respirer();
+		benji.etreAddict("WOW");
+		//sSport.participerTriat(ced);
 	}
 	
 }

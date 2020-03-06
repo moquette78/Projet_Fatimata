@@ -12,8 +12,10 @@ public class Personne implements Isport {
 	public void courir() {
 		System.out.println("Je m'appelle "+this.nom+" et je cours");
 	}
-	
 	public void nager() {
 		System.out.println("Je m'appelle "+this.nom+" et je nage");
+	}
+	public void pedaler() {
+		System.out.println("Je m'appelle "+this.nom+" et je pedale");
 	}
 }

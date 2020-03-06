@@ -11,6 +11,17 @@ import metier.Etudiant;
 
 public class Gestion {
 	
+	
+	
+	
+	// Information d'acc�s � la base de donn�es
+			static String url = "jdbc:mysql://localhost:8889/Projet";
+			static String login = "root";
+			static String password = "root";
+			
+			static Connection connection = null;
+			static Statement statement = null;
+	
 	/***
 	 * 
 	 * @param idEtudiant identifiant de l'etudiant
@@ -26,14 +37,6 @@ public class Gestion {
 			String adresseEtudiant, String telephoneEtudiant, String dateNaissanceEtudiant)
 	{
 		
-		
-		// Information d'acc�s � la base de donn�es
-		String url = "jdbc:mysql://localhost:8889/Projet";
-		String login = "root";
-		String password = "root";
-		
-		Connection connection = null;
-		Statement statement = null;
 		
 		try
 		{
@@ -52,7 +55,7 @@ public class Gestion {
 			// Etape 4 : Ex�cution requ�te
 			statement.executeUpdate(sql);
 			
-			System.out.println("Creation de l'etudiant " + nomEtudiant + " " + prenomEtudiant + ".\n");
+			System.out.println("L'etudiant " + nomEtudiant + " " + prenomEtudiant + " a été crée.\n");
 		}
 		catch (SQLException e)
 		{
@@ -239,7 +242,7 @@ public class Gestion {
 			statement = connection.createStatement();
 			
 			//String sql = "INSERT INTO 'Etudiant' VALUES ("+idEtudiant+","+nomEtudiant+","+prenomEtudiant+","+mailEtudiant+","+adresseEtudiant+","+telephoneEtudiant+","+dateNaissanceEtudiant+")\"";
-			String sql ="Select * FROM Etudiant";
+			String sql ="Select * FROM Etudiant order by nom";
 			
 			// Etape 4 : Ex�cution requ�te
 			rs=statement.executeQuery(sql);
